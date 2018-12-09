@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Leonardo Benini</title>
+  </head>
+  <style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+.item-a {
+  grid-area: header;
+  background-color: grey;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+
+}
+.item-b {
+  grid-area: aboutme;
+  text-algin: center;
+  padding: 10px;
+  margin-right: 20px;
+}
+.item-b2 {
+  grid-area: aboutme2;
+  text-algin: center;
+  padding: 10px;
+  margin-left: 20px;
+}
+.item-c {
+  grid-area: face;
+  text-align: center;
+}
+.item-d {
+  grid-area: footer;
+  background-color: grey;
+}
+.item-e {
+  grid-area: nav;
+}
+.whatwedo {
+  grid-area: whatwedo;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 33% 34% 33%;
+  grid-template-rows: auto 75px auto 1000px 120px;
+  grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "aboutme face aboutme2"
+    "whatwedo whatwedo whatwedo"
+    "footer footer footer";
+}
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="item-a">
+        <img src="head.jpg" alt="Head Bild" style="width:100%">
+      </div>
+      <div class="item-b">
+        <p>TEst test hallo mein name ist Leonardo Benini und ich esse gerne Nudeln.</p>
+      </div>
+      <div class="face">
+        <h2>About Me</h2>
+        <img src="Potrait.jpg" alt="Gesicht" style="width:100%; border-radius: 50%;">
+      </div>
+      <div class="item-b2">
+        <p>Hallo mein Name ist Leonardo und ich wurde in Boston geboren</p>
+      </div>
+      <div class="item-d">
+        <p>Mein twitter: blablalala</p>
+      </div>
+      <div class="item-e">
+        <ul>
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="whatwedo">
+        <h2>Coding History</h2>
+        <p>Angefangen hat alles mit simplen Python Projekten und Spielen, die man gegen die Konsole spielen konnte.
+Danach bin ich zum Arduino übergegangen und habe einen fahrenden Roboter gebaut, der mehr oder weniger einer weißen Linie hinterherfahren kann.
+In der Frustration, dass der Roboter manchmal einfach nicht so gefahren ist wie ich wollte, bin ich wieder zurückgekommen zu Python und habe dann mit den turtle Modul Spiele gebaut, die aussehen wie aus den 80igern. Ich habe dabei aber viel gelernt und mir ging es viel mehr um den Prozess des Programmierens als das Ergebnis selbst.
+Nach einer längeren Pause hat mich das ganze machine learning Thema gepackt und ich habe angefangen, erst mit sklearn simple Programme zu bauen und dann später mit tensorflow richtige neuronale Netzwerke zu entwickeln. Meine Datasets habe ich von kaggle bekommen, eine Website, die Dataanalysis Wettkämpfe austrägt - aber ich habe natürlich nur die einfachen Projekte gemacht, wie Mnist, Titanic, etc.
+Am Anfang des Schuljahres kam der Bundeswettbewerb Informatik auf und ich habe die Aufgaben schnell mit Python erledigt.
+Mein aktuelles Projekt ist, mit Django Webseiten zu programmieren. Hierbei lerne ich natürlich auch Html5 und CSS. Django ist ein Webframework, das Python als Backend benutzt, und sich somit für mich anbietet :)
+</p>
+      </div>
+    </div>
+  </body>
+</html>
