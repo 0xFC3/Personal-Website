@@ -47,17 +47,20 @@ li a:hover {
 }
 .texl {
   grid-area: aboutme;
-  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  align-self: center;
   padding: 10px;
   margin-right: 20px;
   margin-top: 80px;
   color: #43484C;
-  justify-content: center;
 
 }
 .texl2 {
   grid-area: aboutme2;
-  text-algin: center;
+  text-align: center;
+  vertical-align: middle;
+  align-self: center;
   padding: 10px;
   margin-left: 20px;
   margin-top: 80px;
@@ -65,14 +68,33 @@ li a:hover {
 }
 .face {
   grid-area: face;
+  align-self: center;
   text-align: center;
   font-family: Impact, fantasy;
   color: #55A08B;
   text-decoration: underline;
+  max-width: 250px;
+  align-self: center;
+  align-content: center;
+  justify-self: center;
 }
 .footer {
   grid-area: footer;
   background-color: grey;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 120px;
+  grid-template-areas:
+    "socialmedia otherlinks"
+}
+.socialmedia {
+  grid-area: socialmedia;
+  justify-self: center;
+}
+.otherlinks {
+  grid-area: otherlinks;
+  text-align: center;
+  vertical-align: center;
 }
 .navigation {
   grid-area: nav;
@@ -84,19 +106,63 @@ li a:hover {
 .whatwedo {
   grid-area: whatwedo;
   text-align: center;
-  color: #43484C;
+  display:grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows:  auto;
+  grid-template-areas:
+    "überschrift überschrift"
+    "pythonbild python"
+    "webbild web"
+    "robobild robo"
+    "futurebild future"
+}
+.überschrift {
+  grid-area: überschrift;
+  font-family: Impact, fantasy;
+  color: #55A08B;
+  text-decoration: underline;
+}
+.pythonbild {
+  grid-area: pythonbild;
+}
+.python {
+  grid-area: python;
+    color: #43484C;
+}
+.webbild {
+  grid-area: webbild;
+}
+.web {
+  grid-area: web;
+    color: #43484C;
 }
 
+.robobild {
+  grid-area: robobild;
+}
+.robo {
+  grid-area: robo;
+    color: #43484C;
+}
+.futurebild {
+  grid-area: futurebild;
+}
+.future {
+  grid-area: future;
+    color: #43484C;
+}
 .container {
   display: grid;
   grid-template-columns: 33% 34% 33%;
-  grid-template-rows:50px auto auto 3000px 120px;
+  grid-template-rows:50px auto auto auto 120px;
+
   grid-template-areas:
     "nav nav nav"
     "header header header"
     "aboutme face aboutme2"
     "whatwedo whatwedo whatwedo"
     "footer footer footer";
+
 }
     }
   </style>
@@ -116,7 +182,14 @@ li a:hover {
         <p>In der siebten Klasse bin ich mit meiner Familie nach London gezogen und habe dort drei Jahre gelebt. Seit diesem Schuljahr bin ich wieder in München und ich fühle mich sehr wohl in meiner alten Heimat. Aktuell besuche ich die 10. Klasse im Gymnasium Ottobrunn. In meiner Freizeit gehe ich drei Mal die Woche zum Leichtathletik Training, spiele Cello und löse gern Rubik’s Cube Würfel.</p>
       </div>
       <div class="footer">
-        <p>Mein twitter: blablalala</p>
+        <div class="socialmedia">
+          <a href="https://github.com/FloxiGH">
+            <img src="github.png" alt="Github Logo" style="width:10%; height: auto;">
+          </a>
+        </div>
+        <div class="otherlinks">
+          <p>leonardobenini/at/outlook.de (/at/ mit @ ersetzten)</p>
+        </div>
       </div>
       <div class="navigation">
         <ul>
@@ -126,14 +199,33 @@ li a:hover {
         </ul>
       </div>
       <div class="whatwedo">
-        <h2 style="font-family:Impact, fantasy; color: #55A08B; text-decoration: underline;">Coding History</h2>
-        <p>Angefangen hat alles mit simplen Python Projekten und Spielen, die man gegen die Konsole spielen konnte.
-Danach bin ich zum Arduino übergegangen und habe einen fahrenden Roboter gebaut, der mehr oder weniger einer weißen Linie hinterherfahren kann.
-In der Frustration, dass der Roboter manchmal einfach nicht so gefahren ist wie ich wollte, bin ich wieder zurückgekommen zu Python und habe dann mit den turtle Modul Spiele gebaut, die aussehen wie aus den 80igern. Ich habe dabei aber viel gelernt und mir ging es viel mehr um den Prozess des Programmierens als das Ergebnis selbst.
-Nach einer längeren Pause hat mich das ganze machine learning Thema gepackt und ich habe angefangen, erst mit sklearn simple Programme zu bauen und dann später mit tensorflow richtige neuronale Netzwerke zu entwickeln. Meine Datasets habe ich von kaggle bekommen, eine Website, die Dataanalysis Wettkämpfe austrägt - aber ich habe natürlich nur die einfachen Projekte gemacht, wie Mnist, Titanic, etc.
-Am Anfang des Schuljahres kam der Bundeswettbewerb Informatik auf und ich habe die Aufgaben schnell mit Python erledigt.
-Mein aktuelles Projekt ist, mit Django Webseiten zu programmieren. Hierbei lerne ich natürlich auch Html5 und CSS. Django ist ein Webframework, das Python als Backend benutzt, und sich somit für mich anbietet :)
-</p>
+        <div class="überschrift">
+          <h2>What I do</h2>
+        </div>
+        <div class="pythonbild">
+          <p>test</p>
+        </div>
+        <div class="python">
+          <p>test</p>
+        </div>
+        <div class="webbild">
+          <p>test</p>
+        </div>
+        <div class="web">
+          <p>test</p>
+        </div>
+        <div class="robobild">
+          <p>test</p>
+        </div>
+        <div class="robo">
+          <p>test</p>
+        </div>
+        <div class="futurebild">
+          <p>test</p>
+        </div>
+        <div class="future">
+          <p>test</p>
+        </div>
       </div>
     </div>
   </body>
