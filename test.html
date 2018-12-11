@@ -5,12 +5,15 @@
     <title>Leonardo Benini</title>
   </head>
   <style>
+body {
+  font-family: DejaVu Sans Mono, monospace;
+}
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #43484C;
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
@@ -29,55 +32,68 @@ li a {
 }
 
 li a:hover {
-  background-color: #111;
+  background-color: #9A9A9A;
 }
 
 .active {
-  background-color: #4CAF50;
+  background-color: #55A08B;
 }
-.item-a {
+.anfbild {
   grid-area: header;
-  background-color: grey;
   color: white;
   text-align: center;
   font-size: 30px;
 
 }
-.item-b {
+.texl {
   grid-area: aboutme;
-  text-algin: center;
+  align-items: center;
   padding: 10px;
   margin-right: 20px;
+  margin-top: 80px;
+  color: #43484C;
+  justify-content: center;
+
 }
-.item-b2 {
+.texl2 {
   grid-area: aboutme2;
   text-algin: center;
   padding: 10px;
   margin-left: 20px;
+  margin-top: 80px;
+  color: #43484C;
 }
-.item-c {
+.face {
   grid-area: face;
   text-align: center;
+  font-family: Impact, fantasy;
+  color: #55A08B;
+  text-decoration: underline;
 }
-.item-d {
+.footer {
   grid-area: footer;
   background-color: grey;
 }
-.item-e {
+.navigation {
   grid-area: nav;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 5;
 }
 .whatwedo {
   grid-area: whatwedo;
   text-align: center;
+  color: #43484C;
 }
 
 .container {
   display: grid;
   grid-template-columns: 33% 34% 33%;
-  grid-template-rows: auto 75px auto 1000px 120px;
+  grid-template-rows:50px auto auto 3000px 120px;
   grid-template-areas:
-    "header header header"
     "nav nav nav"
+    "header header header"
     "aboutme face aboutme2"
     "whatwedo whatwedo whatwedo"
     "footer footer footer";
@@ -86,23 +102,23 @@ li a:hover {
   </style>
   <body>
     <div class="container">
-      <div class="item-a">
-        <img src="head.jpg" alt="Head Bild" style="width:100%">
+      <div class="anfbild">
+        <img src="Test2.jpg" alt="Head Bild" style="width:100%;">
       </div>
-      <div class="item-b">
-        <p>TEst test hallo mein name ist Leonardo Benini und ich esse gerne Nudeln.</p>
+      <div class="texl">
+        <p>Mein Name ist Leonardo Benini und ich wurde am 21.4.2003 in Boston, USA geboren. Ich habe dort bis zu meinem dritten Lebensjahr gelebt und bin dann nach München gezogen. Dort habe ich dann den Kindergarten, die Grundschule und die ersten zwei Jahre des Gymnasiums besucht. </p>
       </div>
       <div class="face">
-        <h2>About Me</h2>
+        <h1>About Me</h1>
         <img src="Potrait.jpg" alt="Gesicht" style="width:100%; border-radius: 50%;">
       </div>
-      <div class="item-b2">
-        <p>Hallo mein Name ist Leonardo und ich wurde in Boston geboren</p>
+      <div class="texl2">
+        <p>In der siebten Klasse bin ich mit meiner Familie nach London gezogen und habe dort drei Jahre gelebt. Seit diesem Schuljahr bin ich wieder in München und ich fühle mich sehr wohl in meiner alten Heimat. Aktuell besuche ich die 10. Klasse im Gymnasium Ottobrunn. In meiner Freizeit gehe ich drei Mal die Woche zum Leichtathletik Training, spiele Cello und löse gern Rubik’s Cube Würfel.</p>
       </div>
-      <div class="item-d">
+      <div class="footer">
         <p>Mein twitter: blablalala</p>
       </div>
-      <div class="item-e">
+      <div class="navigation">
         <ul>
           <li><a class="active" href="#home">Home</a></li>
           <li><a href="#news">News</a></li>
@@ -110,7 +126,7 @@ li a:hover {
         </ul>
       </div>
       <div class="whatwedo">
-        <h2>Coding History</h2>
+        <h2 style="font-family:Impact, fantasy; color: #55A08B; text-decoration: underline;">Coding History</h2>
         <p>Angefangen hat alles mit simplen Python Projekten und Spielen, die man gegen die Konsole spielen konnte.
 Danach bin ich zum Arduino übergegangen und habe einen fahrenden Roboter gebaut, der mehr oder weniger einer weißen Linie hinterherfahren kann.
 In der Frustration, dass der Roboter manchmal einfach nicht so gefahren ist wie ich wollte, bin ich wieder zurückgekommen zu Python und habe dann mit den turtle Modul Spiele gebaut, die aussehen wie aus den 80igern. Ich habe dabei aber viel gelernt und mir ging es viel mehr um den Prozess des Programmierens als das Ergebnis selbst.
