@@ -51,9 +51,10 @@ li a:hover {
   vertical-align: middle;
   align-self: center;
   padding: 10px;
-  margin-right: 20px;
-  margin-top: 80px;
   color: #43484C;
+  margin-top: 15%;
+  margin-bottom: 15%;
+  margin-right: 10%;
 
 }
 .texl2 {
@@ -62,9 +63,10 @@ li a:hover {
   vertical-align: middle;
   align-self: center;
   padding: 10px;
-  margin-left: 20px;
-  margin-top: 80px;
   color: #43484C;
+  margin-top: 15%;
+  margin-bottom: 15%;
+  margin-left: 10%;
 }
 .face {
   grid-area: face;
@@ -77,6 +79,8 @@ li a:hover {
   align-self: center;
   align-content: center;
   justify-self: center;
+  margin-top: 15%;
+  margin-bottom: 15%;
 }
 .footer {
   grid-area: footer;
@@ -105,6 +109,7 @@ li a:hover {
 }
 .whatwedo {
   grid-area: whatwedo;
+  background-color: #43484C;
   text-align: center;
   display:grid;
   grid-template-columns: 50% 50%;
@@ -113,54 +118,121 @@ li a:hover {
     "überschrift überschrift"
     "pythonbild python"
     "webbild web"
-    "robobild robo"
-    "futurebild future"
+    "learnmore learnmore"
 }
 .überschrift {
   grid-area: überschrift;
-  font-family: Impact, fantasy;
-  color: #55A08B;
+  color: white;
   text-decoration: underline;
+  font-size: 180%;
 }
 .pythonbild {
   grid-area: pythonbild;
+  color: white;
+  padding-top: 3%;
+  padding-bottom: 10%;
+
 }
 .python {
   grid-area: python;
-    color: #43484C;
+  color: white;
+  padding-top: 3%;
+  padding-bottom: 10%;
 }
 .webbild {
   grid-area: webbild;
+  color: white;
+  padding-bottom: 10%;
 }
 .web {
   grid-area: web;
-    color: #43484C;
+  color: white;
+  padding-bottom: 10%;
+}
+.learnmore {
+  grid-area: learnmore;
+  padding-bottom: 5%;
+}
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
 
-.robobild {
-  grid-area: robobild;
+.button1 {
+  background-color: #43484C;
+  color: white;
+  border: 2px solid #55A08B;
 }
-.robo {
-  grid-area: robo;
-    color: #43484C;
+
+.button1:hover {
+  background-color: #55A08B;
+  color: white;
 }
-.futurebild {
-  grid-area: futurebild;
+
+.photo {
+  grid-area: photo;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 33% 34% 33%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "über über über"
+    "te1 te2 te3"
+    "lm lm lm"
 }
-.future {
-  grid-area: future;
-    color: #43484C;
+.über {
+  grid-area: über;
+  color: black;
+  text-decoration: underline;
+  font-size: 180%;
+}
+.te1 {
+  grid-area: te1;
+  padding-bottom: 10%;
+}
+.te2 {
+  grid-area: te2;
+  padding-bottom: 10%;
+}
+.te3 {
+  grid-area: te3;
+  padding-bottom: 10%;
+}
+.lm {
+  grid-area: lm;
+  padding-bottom: 5%;
+}
+.button2 {
+  background-color: #55A08B;
+  color: black;
+  border: 2px solid #55A08B;
+}
+
+.button2:hover {
+  background-color: white;
+  color: black;
 }
 .container {
   display: grid;
-  grid-template-columns: 33% 34% 33%;
-  grid-template-rows:50px auto auto auto 120px;
+  grid-template-columns: auto;
+  grid-template-rows:50px auto auto auto auto auto;
 
   grid-template-areas:
     "nav nav nav"
     "header header header"
     "aboutme face aboutme2"
     "whatwedo whatwedo whatwedo"
+    "photo photo photo"
     "footer footer footer";
 
 }
@@ -175,7 +247,6 @@ li a:hover {
         <p>Mein Name ist Leonardo Benini und ich wurde am 21.4.2003 in Boston, USA geboren. Ich habe dort bis zu meinem dritten Lebensjahr gelebt und bin dann nach München gezogen. Dort habe ich dann den Kindergarten, die Grundschule und die ersten zwei Jahre des Gymnasiums besucht. </p>
       </div>
       <div class="face">
-        <h1>About Me</h1>
         <img src="Potrait.jpg" alt="Gesicht" style="width:100%; border-radius: 50%;">
       </div>
       <div class="texl2">
@@ -200,32 +271,59 @@ li a:hover {
       </div>
       <div class="whatwedo">
         <div class="überschrift">
-          <h2>What I do</h2>
+          <h2>Development</h2>
         </div>
         <div class="pythonbild">
-          <p>test</p>
+          <h1>Python</h1>
+          <p>It is my main language and</p>
+          <p> I have all kinds of projects with it</p>
         </div>
         <div class="python">
-          <p>test</p>
+          <h1>Html/CSS</h1>
+          <p>Started recently and did </p>
+          <p>this website for example</p>
         </div>
         <div class="webbild">
-          <p>test</p>
+          <h1>Arduino</h1>
+          <p>I developed a robot that drives along a line</p>
         </div>
         <div class="web">
-          <p>test</p>
+          <h1>Future Ambitions</h1>
+          <p>I am looking into learning Java and C</p>
         </div>
-        <div class="robobild">
-          <p>test</p>
+        <div class="learnmore">
+          <a href="/projects" class="button button1" style="font-family: DejaVu Sans Mono, monospace;">Learn More</a>
         </div>
-        <div class="robo">
-          <p>test</p>
+      </div>
+      <div class="photo">
+        <div class="über">
+          <h2>Photography</h2>
         </div>
-        <div class="futurebild">
-          <p>test</p>
+        <div class="te1">
+          <h1>Videos</h1>
+          <p>I started out making </p>
+          <p>videos, mostly vlogs.</p>
+          <p>After that I did some</p>
+          <p>larger projects.</p>
         </div>
-        <div class="future">
-          <p>test</p>
+        <div class="te2">
+          <h1>Photos</h1>
+          <p>When I go somewhere nice</p>
+          <p>I take a few photos and</p>
+          <p>edit them when they are</p>
+          <p>really good.</p>
         </div>
+        <div class="te3">
+          <h1>Equipment</h1>
+          <p>I have a Canon Eos 7D, a good</p>
+          <p>tripod and other smaller cameras</p>
+          <p>and gadgets. For edeting I use</p>
+          <p>Lightroom and Video Magix Deluxe.</p>
+        </div>
+        <div class="lm">
+          <a href="/photography" class="button button2" style="font-family: DejaVu Sans Mono, monospace;">Learn More</a>
+        </div>
+
       </div>
     </div>
   </body>
