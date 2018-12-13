@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Leonardo Benini</title>
   </head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
 body {
   font-family: DejaVu Sans Mono, monospace;
@@ -85,29 +86,48 @@ li a:hover {
 .footer {
   grid-area: footer;
   background-color: grey;
+  text-align: center;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 50% 50%;
+  grid-template-rows: auto;
   grid-template-areas:
-    "platz twitter github instagram platz"
-    "otherlinks otherlinks otherlinks otherlinks otherlinks"
+    "social-footer social-footer social-footer"
+    "otherlinks otherlinks otherlinks"
 }
+.social-footer {
+  grid-area: social-footer;
+  padding-top: 2%;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
 .otherlinks {
   grid-area: otherlinks;
   text-align: center;
   vertical-align: center;
-}
-.platz {
-  grid-area: platz;
-}
-.twitter {
-  grid-area: twitter;
-}
-.github {
-  grid-area: github;
-}
-.instagram {
-  grid-area: instagram;
 }
 
 .navigation {
@@ -251,7 +271,7 @@ li a:hover {
   <body>
     <div class="container">
       <div class="anfbild">
-        <img src="Test2.jpg" alt="Head Bild" style="width:100%;">
+        <img src="Websitehead.png" alt="Head Bild" style="width:100%;">
       </div>
       <div class="texl">
         <p>Mein Name ist Leonardo Benini und ich wurde am 21.4.2003 in Boston, USA geboren. Ich habe dort bis zu meinem dritten Lebensjahr gelebt und bin dann nach München gezogen. Dort habe ich dann den Kindergarten, die Grundschule und die ersten zwei Jahre des Gymnasiums besucht. </p>
@@ -263,20 +283,10 @@ li a:hover {
         <p>In der siebten Klasse bin ich mit meiner Familie nach London gezogen und habe dort drei Jahre gelebt. Seit diesem Schuljahr bin ich wieder in München und ich fühle mich sehr wohl in meiner alten Heimat. Aktuell besuche ich die 10. Klasse im Gymnasium Ottobrunn. In meiner Freizeit gehe ich drei Mal die Woche zum Leichtathletik Training, spiele Cello und löse gern Rubik’s Cube Würfel.</p>
       </div>
       <div class="footer">
-        <div class="github">
-          <a href="https://github.com/FloxiGH" target="_blank">
-            <img src="github.png" alt="Github Logo" style="width:auto; height: auto; max-width: 100px; min-width: 20px;">
-          </a>
-        </div>
-        <div class="twitter">
-          <a href="https://twitter.com/FloxiTw" target="_blank">
-            <img src="twitter-squared.png" alt="Twitter" style="width:auto; height: auto; max-width: 100px; min-width: 20px;">
-          </a>
-        </div>
-        <div class="instagram">
-          <a href="https://www.instagram.com/floxiig/?hl=de" target="_blank">
-            <img src="insta.png" alt="Instagram" style="width:auto; height: auto; max-width: 100px; min-width: 20px;">
-          </a>
+        <div class="social-footer">
+          <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/FloxiTw" class="fa fa-twitter"></a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCPsS3_c6er6kaSQgYSYPquw?view_as=subscriber" class="fa fa-youtube"></a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/floxiig/?hl=de" class="fa fa-instagram"></a>
         </div>
         <div class="otherlinks">
           <p>Please  contact me at</p>
@@ -286,8 +296,8 @@ li a:hover {
       <div class="navigation">
         <ul>
           <li><a class="active" href="#home">Home</a></li>
-          <li><a href="#news">Development</a></li>
-          <li><a href="#contact">Photography</a></li>
+          <li><a href="/development">Development</a></li>
+          <li><a href="/photography">Photography</a></li>
         </ul>
       </div>
       <div class="whatwedo">
@@ -313,7 +323,7 @@ li a:hover {
           <p>I am looking into learning Java and C</p>
         </div>
         <div class="learnmore">
-          <a href="/projects" class="button button1" style="font-family: DejaVu Sans Mono, monospace;">Learn More</a>
+          <a target="_blank" rel="noopener noreferrer" href="https://github.com/FloxiGH" class="button button1" style="font-family: DejaVu Sans Mono, monospace;">Learn More</a>
         </div>
       </div>
       <div class="photo">
@@ -342,7 +352,7 @@ li a:hover {
           <p>Lightroom and Video Magix Deluxe.</p>
         </div>
         <div class="lm">
-          <a href="/photography" class="button button2" style="font-family: DejaVu Sans Mono, monospace;">Learn More</a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/floxiig/?hl=de" class="button button2" style="font-family: DejaVu Sans Mono, monospace;">Learn More</a>
         </div>
 
       </div>
