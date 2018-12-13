@@ -86,20 +86,30 @@ li a:hover {
   grid-area: footer;
   background-color: grey;
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 120px;
+  grid-template-columns: auto;
+  grid-template-rows: 50% 50%;
   grid-template-areas:
-    "socialmedia otherlinks"
-}
-.socialmedia {
-  grid-area: socialmedia;
-  justify-self: center;
+    "platz twitter github instagram platz"
+    "otherlinks otherlinks otherlinks otherlinks otherlinks"
 }
 .otherlinks {
   grid-area: otherlinks;
   text-align: center;
   vertical-align: center;
 }
+.platz {
+  grid-area: platz;
+}
+.twitter {
+  grid-area: twitter;
+}
+.github {
+  grid-area: github;
+}
+.instagram {
+  grid-area: instagram;
+}
+
 .navigation {
   grid-area: nav;
   grid-column-start: 1;
@@ -253,20 +263,31 @@ li a:hover {
         <p>In der siebten Klasse bin ich mit meiner Familie nach London gezogen und habe dort drei Jahre gelebt. Seit diesem Schuljahr bin ich wieder in München und ich fühle mich sehr wohl in meiner alten Heimat. Aktuell besuche ich die 10. Klasse im Gymnasium Ottobrunn. In meiner Freizeit gehe ich drei Mal die Woche zum Leichtathletik Training, spiele Cello und löse gern Rubik’s Cube Würfel.</p>
       </div>
       <div class="footer">
-        <div class="socialmedia">
-          <a href="https://github.com/FloxiGH">
-            <img src="github.png" alt="Github Logo" style="width:10%; height: auto;">
+        <div class="github">
+          <a href="https://github.com/FloxiGH" target="_blank">
+            <img src="github.png" alt="Github Logo" style="width:auto; height: auto; max-width: 100px; min-width: 20px;">
+          </a>
+        </div>
+        <div class="twitter">
+          <a href="https://twitter.com/FloxiTw" target="_blank">
+            <img src="twitter-squared.png" alt="Twitter" style="width:auto; height: auto; max-width: 100px; min-width: 20px;">
+          </a>
+        </div>
+        <div class="instagram">
+          <a href="https://www.instagram.com/floxiig/?hl=de" target="_blank">
+            <img src="insta.png" alt="Instagram" style="width:auto; height: auto; max-width: 100px; min-width: 20px;">
           </a>
         </div>
         <div class="otherlinks">
-          <p>leonardobenini/at/outlook.de (/at/ mit @ ersetzten)</p>
+          <p>Please  contact me at</p>
+          <p>leonardobenini/at/outlook.de (replace /at/ with @)</p>
         </div>
       </div>
       <div class="navigation">
         <ul>
           <li><a class="active" href="#home">Home</a></li>
-          <li><a href="#news">News</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#news">Development</a></li>
+          <li><a href="#contact">Photography</a></li>
         </ul>
       </div>
       <div class="whatwedo">
